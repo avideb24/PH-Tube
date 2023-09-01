@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions & Answers</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <section class="m-4 flex justify-center flex-wrap gap-5">
+        
+        <div class="border-4 border-red-300 p-4 w-[360px] sm:w-[500px]">
+            <p class="text-lg"><span class="text-xl font-bold text-red-600">Question:</span> Discuss the scope of var, let, and const?</p>
+            <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
+                <ul class="list-disc ml-24">
+                    <li><span class="font-bold">Var:</span> It's not a block scoped element and it can cause unexpected issues.</li>
+                    <li><span class="font-bold">Let:</span> It's a block scoped element. You can access it only the scoped areas. You can reassign it's value.</li>
+                    <li><span class="font-bold">Const:</span> It's a block scoped element. You can't reassign the value.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="border-4 border-red-300 p-4 w-[360px] sm:w-[500px]">
+            <p class="text-lg"><span class="text-xl font-bold text-red-600">Question:</span> Tell us the use cases of null and undefined?</p>
+            <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
+                <ul class="list-disc ml-24">
+                    <li><span class="font-bold">Null:</span> When you assign a value null, that means the elements has no value or you want to show the value intentionally.</li>
+                    <li><span class="font-bold">Undifined:</span> If can declare a variable but forget to assign the value, it will give you undifined. And trying to access any element or value which doesn't exist, it will return undifined.</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="border-4 border-red-300 p-4 w-[360px] sm:w-[500px]">
+            <p class="text-lg"><span class="text-xl font-bold text-red-600">Question:</span> What do you mean by REST API??</p>
+            <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
+                <p class="ml-24">REST API is like a menu in a restaurant. It tells you what dishes (resources) are available and how you can order (request) them. You use common words like "get," "create," "update," and "delete" to interact with the menu. The waiter (server) then brings you the food (data) you asked for in a format you understand, like a plate (JSON). It's a way for computer programs to talk to each other over the internet, just like people order food at a restaurant.</p>
+            </p>
+        </div>
+
+    </section>
+    
+</body>
+</html>
