@@ -2,10 +2,7 @@
 const loadCetagory = async () => {
     const response = await fetch('https://openapi.programming-hero.com/api/videos/categories');
     const data = await response.json();
-    console.log(data.data)
-
-    // const categories = data.data.map(item => item.category);
-    // console.log(categories);
+    // console.log(data.data);
 
     const categoryContainer = document.getElementById('category-container');
 
@@ -17,15 +14,19 @@ const loadCetagory = async () => {
         categoryContainer.appendChild(btn);
     });
 
-
 };
 
 
-const getCategory = async(catagoryId) => {
-
-    const response = await fetch(` https://openapi.programming-hero.com/api/videos/category/${catagoryId}`);
+const getCategory = async(categoryId) => {
+    const response = await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`);
     const data = await response.json();
     // console.log(data.data)
+    // const arrayData = data.data;
+    // if(arrayData.length === 0){
+    //     console.log('got it')
+    //     const noContent = document.getElementById('no-content');
+    //     noContent.classList.remove('hidden')
+    // }
     
     const videoContainer = document.getElementById('video-container');
     videoContainer.innerHTML = '';
@@ -45,9 +46,7 @@ const getCategory = async(catagoryId) => {
                         <h1 class="font-bold">${video.title}</h1>
                         <div class="flex items-center justify-start gap-1">
                             <h3 class="text-[13px] font-medium text-[#17171795]">${video.authors[0].profile_name}</h3>
-                            <span class="hidden">
-                                
-                            </span>
+                            <span>${video.authors[0].verified ? `<img src="varified-icon.png">` : ''}</span>
                         </div>
                         <p class="text-[13px] font-medium text-[#17171795]">${video.others.views} Views</p>
                     </div>
@@ -55,7 +54,9 @@ const getCategory = async(catagoryId) => {
             </div>
         `;
         videoContainer.appendChild(div);
+        
     })
+    
 
 };
 
