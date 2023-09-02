@@ -10,15 +10,19 @@
 </head>
 <body>
 
-    <section class="m-4 flex justify-center flex-wrap gap-5">
+    <header class="m-4 pb-4 border-b-2 border-solid border-gray-300">
+        <a href="index.html"><img src="Logo.png" alt=""></a>
+    </header>
+
+    <section class="m-4 pt-4 flex justify-center flex-wrap gap-5">
         
         <div class="border-4 border-red-300 p-4 w-[360px] sm:w-[500px]">
             <p class="text-lg"><span class="text-xl font-bold text-red-600">Question:</span> Discuss the scope of var, let, and const?</p>
             <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
                 <ul class="list-disc ml-24">
-                    <li><span class="font-bold">Var:</span> It's not a block scoped element and it can cause unexpected issues.</li>
+                    <li><span class="font-bold">Var:</span> It's not a block scoped element and it can cause some unexpected issues.</li>
                     <li><span class="font-bold">Let:</span> It's a block scoped element. You can access it only the scoped areas. You can reassign it's value.</li>
-                    <li><span class="font-bold">Const:</span> It's a block scoped element. You can't reassign the value.</li>
+                    <li><span class="font-bold">Const:</span> It's also a block scoped element like Let. But you can't reassign the value.</li>
                 </ul>
             </p>
         </div>
@@ -28,7 +32,7 @@
             <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
                 <ul class="list-disc ml-24">
                     <li><span class="font-bold">Null:</span> When you assign a value null, that means the elements has no value or you want to show the value intentionally.</li>
-                    <li><span class="font-bold">Undifined:</span> If can declare a variable but forget to assign the value, it will give you undifined. And trying to access any element or value which doesn't exist, it will return undifined.</li>
+                    <li><span class="font-bold">Undifined:</span> If can declare a variable but forget to assign the value, it will give you undifined. And trying to access any element or value which doesn't exist, it will also return undifined.</li>
                 </ul>
             </p>
         </div>
@@ -36,7 +40,7 @@
         <div class="border-4 border-red-300 p-4 w-[360px] sm:w-[500px]">
             <p class="text-lg"><span class="text-xl font-bold text-red-600">Question:</span> What do you mean by REST API??</p>
             <p class="text-lg"><span class="text-xl font-bold text-green-600">Answer:</span> 
-                <p class="ml-24">REST API is like a menu in a restaurant. It tells you what dishes (resources) are available and how you can order (request) them. You use common words like "get," "create," "update," and "delete" to interact with the menu. The waiter (server) then brings you the food (data) you asked for in a format you understand, like a plate (JSON). It's a way for computer programs to talk to each other over the internet, just like people order food at a restaurant.</p>
+                <p class="ml-24">REST API is like a menu in a restaurant. It tells you what dishes (resources) are available and how you can order (request) them. You use common words like "get," "create," "update," and "delete" to interact with the menu. The waiter (server) then brings you the food (data) you asked for. It's a way for computer programs to talk to each other over the internet, just like people order food at a restaurant.</p>
             </p>
         </div>
 
