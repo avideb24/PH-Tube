@@ -13,7 +13,7 @@ const loadCetagory = async () => {
     data.data.forEach((category) => {
         const btn = document.createElement('button');
         btn.innerHTML = `
-        <button <a onclick="getCategory('${category.category_id}')" class="btn btn-active">${category.category}</button>
+        <button <a onclick="getCategory('${category.category_id}')" class="btn btn-active bg-white text-black hover:bg-gray-300">${category.category}</button>
         `;
         categoryContainer.appendChild(btn);
     });
@@ -61,15 +61,15 @@ const getCategory = async (categoryId) => {
             const div = document.createElement('div');
             div.innerHTML = `
                 <div>
-                    <div class="relative h-44 bg-black rounded-xl">
+                    <div class="relative h-56 sm:h-44 bg-black rounded-xl text-black">
                         <img src=${video.thumbnail} class="object-fill object-center w-full h-full rounded-xl " alt="">
                         <p class="rounded absolute block text-xs bg-black p-1 px-2 text-white z-20 bottom-2 right-3">${video.others.posted_date ? postDate(video.others.posted_date) : ''}</p>
                     </div>
-                    <div class="flex gap-3 mt-5">
+                    <div class="flex gap-3 mt-5 text-black">
                         <div class="author-image w-8 h-8 rounded-full">
                             <img src=${video.authors[0].profile_picture} class="rounded-full object-cover w-8 h-8 " alt="">
                         </div>
-                        <div class="video-details space-y-2">
+                        <div class="video-details space-y-2 text-black">
                             <h1 class="font-bold">${video.title}</h1>
                             <div class="flex items-center justify-start gap-1">
                                 <h3 class="text-[13px] font-medium text-[#17171795]">${video.authors[0].profile_name}</h3>
